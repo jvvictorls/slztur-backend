@@ -1,5 +1,5 @@
 import { QueryInterface, DataTypes, Model } from "sequelize";
-import ISpot from "../../interfaces/ISpot";
+import ISpot from "../../interfaces/Spots/ISpot";
 
 export default {
   up: async (queryInterface: QueryInterface) => {
@@ -19,6 +19,10 @@ export default {
         allowNull: false
       },
       city: {
+        type: DataTypes.STRING,
+        allowNull: false
+      },
+      type: {
         type: DataTypes.STRING,
         allowNull: false
       },

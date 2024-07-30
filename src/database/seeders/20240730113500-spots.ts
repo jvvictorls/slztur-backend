@@ -7,6 +7,7 @@ export default {
       name: 'Praia do araçagy',
       description:'lorem ipsum',
       city: 'São Luís',
+      type: 'Praia',
       tips: 'lorem ipsum',
       image: 'https://fakedirectory.com/fakeimage.jpg'
     }

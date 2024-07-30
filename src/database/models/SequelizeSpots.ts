@@ -14,7 +14,9 @@ class SequelizeSpots extends Model<InferAttributes<SequelizeSpots>, InferCreatio
 
   declare description: string;
 
-  declare city: String;
+  declare city: string;
+
+  declare type: string;
 
   declare tips: string;
 
@@ -41,6 +43,10 @@ SequelizeSpots.init({
     type: DataTypes.STRING,
     allowNull: false
   },
+  type: {
+    type: DataTypes.STRING,
+    allowNull: false
+  },
   tips: {
     type: DataTypes.STRING,
     allowNull: false
@@ -51,7 +57,8 @@ SequelizeSpots.init({
   },
 }, {
   sequelize: db,
-  modelName: 'spots'
+  modelName: 'spots',
+  timestamps: false
 })
 
 export default SequelizeSpots;
