@@ -1,0 +1,35 @@
+import { QueryInterface, DataTypes, Model } from "sequelize";
+import ISpot from "../../interfaces/ISpot";
+
+export default {
+  up: async (queryInterface: QueryInterface) => {
+    await queryInterface.createTable<Model<ISpot>>('spots', {
+      id: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
+        autoIncrement: true,
+        primaryKey: true
+      },
+      name: {
+        type: DataTypes.STRING,
+        allowNull: false
+      },
+      description: {
+        type: DataTypes.STRING,
+        allowNull: false
+      },
+      city: {
+        type: DataTypes.STRING,
+        allowNull: false
+      },
+      tips: {
+        type: DataTypes.STRING,
+        allowNull: false
+      },
+      image: {
+        type: DataTypes.STRING,
+        allowNull: false
+      },
+  });
+  }
+}
