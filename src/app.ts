@@ -1,5 +1,6 @@
 import express from 'express';
 import 'express-async-errors';
+import routes from './routes';
 
 class App {
   public app: express.Express;
@@ -10,6 +11,8 @@ class App {
     this.app.use(express.json());
 
     this.config();
+
+    this.routes();
   }
 
   private config():void {
@@ -22,6 +25,12 @@ class App {
 
     this.app.use(accessControl);
   }
+
+
+  private routes(): void {
+    this.app.use(routes);
+  }
+
 
   public start(PORT: string | number): void {
     this.app.listen(PORT, () => console.log(`Running on port ${PORT}`));
