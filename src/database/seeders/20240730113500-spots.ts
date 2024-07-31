@@ -11,7 +11,10 @@ export default {
       tips: 'lorem ipsum',
       image: 'https://fakedirectory.com/fakeimage.jpg'
     }
-    
     ]);
+  },
+
+  down: async (queryInterface: QueryInterface) => {
+    await queryInterface.bulkDelete('spots', {}, {});
   }
 }
