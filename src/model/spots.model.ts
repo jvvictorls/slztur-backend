@@ -18,16 +18,24 @@ class SpotsModel implements ISpotsModel{
     return dbData;
   }
   
-  create(spot: ISpot): Promise<ISpot> {
-    throw new Error("Method not implemented.");
+  async create(spot: ISpot): Promise<ISpot> {
+    const insertData = await this.model.create(spot);
+    const { id, name, description, city, type, tips, image } = insertData;
+    return {id, name, description, city, type, tips, image};
   }
   
-  update(id: number, spot: ISpot): Promise<ISpot | null> {
-    throw new Error("Method not implemented.");
+  async update(id: number, spot: ISpot): Promise<ISpot | null> {
+    const updateData = await this.model.update(spot, { where: { id } });
+    if (!updateData) {
+      return null;
+    }
+    const { name, description, city, type, tips, image } = spot;
+    return { id, name, description, city, type, tips, image};
   }
   
-  delete(id: number): Promise<boolean> {
-    throw new Error("Method not implemented.");
+  async delete(id: number): Promise<boolean> {
+    const deleteData = await this.model.destroy({ where: { id } });
+    return deleteData ? true : false;
   } 
 
 }
