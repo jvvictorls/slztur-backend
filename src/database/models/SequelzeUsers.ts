@@ -4,7 +4,6 @@ import {
   CreationOptional,
   InferAttributes,
   InferCreationAttributes,
-  Sequelize
 } from 'sequelize'
 import db from '.'
 
@@ -17,7 +16,7 @@ class SequelizeUsers extends Model<InferAttributes<SequelizeUsers>, InferCreatio
 
   declare password: string;
 
-  declare role: string;
+  declare role: 'admin' | 'user' | 'superadmin';
 
 }
 
@@ -50,3 +49,4 @@ SequelizeUsers.init({
   timestamps: false,
 })
 
+export default SequelizeUsers;
