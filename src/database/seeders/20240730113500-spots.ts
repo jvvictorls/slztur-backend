@@ -9,7 +9,10 @@ export default {
       city: 'São Luís',
       type: 'Praia',
       tips: 'Ir de dia, levar protetor solar, bom para crianças',  
-      image: 'https://i.pinimg.com/originals/3c/6e/77/3c6e7715c761613683c9e988d6d2b92f.jpg'
+      image: 'https://i.pinimg.com/originals/3c/6e/77/3c6e7715c761613683c9e988d6d2b92f.jpg',
+      latitude: -2.523135,
+      longitude: -44.156289
+
     },
     {
       name: 'Praia do Calhau',
@@ -17,7 +20,10 @@ export default {
       city: 'São Luís',
       type: 'Praia',
       tips: 'Ir de dia, levar protetor solar, bom para crianças',
-      image: 'https://turismosaoluis.com.br/wp-content/uploads/2023/12/Praia-do-Calhau.jpg'
+      image: 'https://turismosaoluis.com.br/wp-content/uploads/2023/12/Praia-do-Calhau.jpg',
+      latitude: -2.482362,
+      longitude: -44.257582
+
     },
     {
       name: 'Teatro Arthur Azevedo',
@@ -25,7 +31,9 @@ export default {
       city: 'São Luís',
       type: 'Cultural',
       tips: 'Ir de noite, levar casaco, bom para casais',
-      image: 'https://www.ma.gov.br/uploads/ma/imgs/42175_whatsapp_image_2023_05_31_at_19.31.03_454147255898060875_.jpeg'
+      image: 'https://www.ma.gov.br/uploads/ma/imgs/42175_whatsapp_image_2023_05_31_at_19.31.03_454147255898060875_.jpeg',
+      latitude: -2.528258,
+      longitude: -44.302476
     },
     {
       name: 'Centro Histórico de São Luís',
@@ -33,7 +41,10 @@ export default {
       city: 'São Luís',
       type: 'Cultural',
       tips: 'Ir de dia, levar câmera fotográfica, bom para famílias',
-      image: 'https://www.voltologo.net/wp-content/uploads/2023/02/centro-historico-de-sao-luis-dicas.jpg.webp'
+      image: 'https://www.voltologo.net/wp-content/uploads/2023/02/centro-historico-de-sao-luis-dicas.jpg.webp',
+      latitude: -2.530730,
+      longitude: -44.305434
+
     },
     {
       name: 'Parque Estadual do Mirador',
@@ -41,7 +52,10 @@ export default {
       city: 'Mirador',
       type: 'Natureza',
       tips: 'Ir de dia, levar repelente, bom para aventureiros',
-      image: 'https://i0.wp.com/oeco.org.br/wp-content/uploads/2020/10/Oeco_PE-do-Mirador-SEMA-divulgacao.jpg?fit=1152%2C768&ssl=1'
+      image: 'https://i0.wp.com/oeco.org.br/wp-content/uploads/2020/10/Oeco_PE-do-Mirador-SEMA-divulgacao.jpg?fit=1152%2C768&ssl=1',
+      latitude: -6.374722,
+      longitude: -44.370278
+
     },
     {
       name: 'Lençóis Maranhenses',
@@ -49,7 +63,10 @@ export default {
       city: 'Barreirinhas',
       type: 'Natureza',
       tips: 'Ir de dia, levar protetor solar, bom para casais',
-      image: 'https://upload.wikimedia.org/wikipedia/commons/1/18/Lagoa_e_duna_no_Parque_Nacional_dos_Len%C3%A7ois_maranhenses_%28S%C3%A3o_Lu%C3%ADs_-_BR%29.JPG'
+      image: 'https://upload.wikimedia.org/wikipedia/commons/1/18/Lagoa_e_duna_no_Parque_Nacional_dos_Len%C3%A7ois_maranhenses_%28S%C3%A3o_Lu%C3%ADs_-_BR%29.JPG',
+      latitude: -2.485839,
+      longitude: -43.116188
+
     },
     {
       name: 'Parque Nacional da Chapada das Mesas',
@@ -57,7 +74,9 @@ export default {
       city: 'Carolina',
       type: 'Natureza',
       tips: 'Ir de dia, levar repelente, bom para aventureiros',
-      image: 'https://turismo.ma.gov.br/uploads/setur/imgs/Po%C3%A7o-Azul-Chapada-das-Mesas-Riach%C3%A3o-MA2.jpg'
+      image: 'https://turismo.ma.gov.br/uploads/setur/imgs/Po%C3%A7o-Azul-Chapada-das-Mesas-Riach%C3%A3o-MA2.jpg',
+      latitude: -7.050833,
+      longitude: -46.827222
     },
     {
       name: 'Cachoeira da Fumaça',
@@ -65,7 +84,10 @@ export default {
       city: 'Carolina',
       type: 'Natureza',
       tips: 'Ir de dia, levar protetor solar, bom para aventureiros',
-      image: 'https://iema.es.gov.br/Media/iema/Not%C3%ADcias/PECF%20-%20Karol%20Gazoni%20(14).jpeg'
+      image: 'https://iema.es.gov.br/Media/iema/Not%C3%ADcias/PECF%20-%20Karol%20Gazoni%20(14).jpeg',
+      latitude: -6.885788,
+      longitude: -47.497038
+
     },
     {
       name: 'Catedral de São Luís',
@@ -73,7 +95,10 @@ export default {
       city: 'São Luís',
       type: 'Cultural',
       tips: 'Ir de dia, levar câmera fotográfica, bom para famílias',
-      image: 'https://upload.wikimedia.org/wikipedia/commons/4/49/SaoLuis-Cathedral.jpg'
+      image: 'https://upload.wikimedia.org/wikipedia/commons/4/49/SaoLuis-Cathedral.jpg',
+      latitude: -2.529491,
+      longitude: -44.303075
+
     }
     ]);
   },

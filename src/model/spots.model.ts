@@ -20,8 +20,8 @@ class SpotsModel implements ISpotsModel{
   
   async create(spot: ISpot): Promise<ISpot> {
     const insertData = await this.model.create(spot);
-    const { id, name, description, city, type, tips, image } = insertData;
-    return {id, name, description, city, type, tips, image};
+    const { id, name, description, city, type, tips, image, latitude, longitude } = insertData;
+    return {id, name, description, city, type, tips, image, latitude, longitude};
   }
   
   async update(id: number, spot: ISpot): Promise<ISpot | null> {
@@ -29,8 +29,8 @@ class SpotsModel implements ISpotsModel{
     if (!updateData) {
       return null;
     }
-    const { name, description, city, type, tips, image } = spot;
-    return { id, name, description, city, type, tips, image};
+    const { name, description, city, type, tips, image, latitude, longitude } = spot;
+    return { id, name, description, city, type, tips, image, latitude, longitude };
   }
   
   async delete(id: number): Promise<boolean> {

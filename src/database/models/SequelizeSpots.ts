@@ -22,6 +22,10 @@ class SequelizeSpots extends Model<InferAttributes<SequelizeSpots>, InferCreatio
 
   declare image: string;
 
+  declare latitude: number;
+
+  declare longitude: number;
+
 }
 
 SequelizeSpots.init({
@@ -55,6 +59,14 @@ SequelizeSpots.init({
     type: DataTypes.STRING,
     allowNull: false
   },
+  latitude: {
+    type: DataTypes.FLOAT,
+    allowNull: false
+  },
+  longitude: {
+    type: DataTypes.FLOAT,
+    allowNull: false
+  }
 }, {
   sequelize: db,
   modelName: 'spots',

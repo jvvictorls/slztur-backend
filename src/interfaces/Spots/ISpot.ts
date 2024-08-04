@@ -6,4 +6,6 @@ export default interface ISpot {
   type: string;
   tips: string;
   image: string;
+  latitude: number;
+  longitude: number;
  }
