@@ -8,19 +8,19 @@ export default {
     await queryInterface.bulkInsert('users', [
       {
         name: 'admin',
-        email: '',
+        email: 'admin@admin.com',
         password: 'admin',
         role: 'admin'
       },
       {
         name: 'user',
-        email: '',
+        email: 'user@user.com',
         password: 'user',
         role: 'user'
       },
       {
         name: 'superadmin',
-        email: '',
+        email: 'superadmin@superadmin.com',
         password: 'superadmin',
         role: 'superadmin'
       }
